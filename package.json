@@ -8,14 +8,14 @@
   "workspaces": {
     "packages": [
       "packages/**"
-    ],
-    "nohoist": [
-      "**/module-alias"
     ]
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
     "lambda-local": "^1.7.4",
     "path": "^0.12.7"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
   }
 }
