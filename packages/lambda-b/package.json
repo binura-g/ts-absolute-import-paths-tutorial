@@ -1,0 +1,26 @@
+{
+  "name": "@absolute-imports-example/lambda-b",
+  "version": "1.0.0",
+  "description": "A node/typescript starter with Live-reloading, absolute path imports and incremental compilation built-in",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/main.js\"",
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "_moduleAliases": {
+    "@server": "dist/server",
+    "@common": "dist/common",
+    "@example": "dist/example",
+    "src": "dist"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.8",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^9.1.1"
+  }
+}
