@@ -1,10 +1,10 @@
 import 'module-alias/register';
 import path from 'path';
 
-import { handler } from '../packages/lambda-a/src';
+import { handler } from '../packages/lambda-b/src';
 import lambdaLocal = require('lambda-local');
 
-// const callA = async () =>
+// const callB = async () =>
 //   await lambdaLocal.execute({
 //     lambdaPath: path.join(__dirname, '../packages/lambda-a/src/index'),
 //     lambdaHandler: 'handler',
@@ -12,8 +12,8 @@ import lambdaLocal = require('lambda-local');
 //     event: {},
 //   });
 
-const callA = async () => handler({});
+const callB = async () => handler({});
 
-callA()
-  .then((result) => console.log({ bla: result }))
-  .catch((err) => console.log({ bla: err }));
+callB()
+  .then((result) => console.log({ result }))
+  .catch((err) => console.log({ err }));
